@@ -1,29 +1,41 @@
 # makocatsmath.com
 
-Website for **Mako Cats Math**, the math game for kids on iPhone and iPad.
+Website for **Mako Cats Math**, the math game for kids on iPhone, iPad and Android, in English and German.
 Plain HTML and CSS. Nothing to install and nothing to build.
 
-| Page | File |
-|---|---|
-| Home | `index.html` |
-| Support (the App Store "Support URL") | `support/index.html` |
-| Privacy (this website + link to the app's policy) | `privacy/index.html` |
-| Impressum | `impressum/index.html` |
-| Page not found | `404.html` |
+| Page | English | German |
+|---|---|---|
+| Home | `index.html` | `de/index.html` |
+| Support (the store "Support URL") | `support/index.html` | `de/support/index.html` |
+| Privacy (this website + summary of the app) | `privacy/index.html` | `de/datenschutz/index.html` |
+| Impressum (German only) | `impressum/index.html` | |
+| Page not found | `404.html` (both languages) | |
 
-Colors and layout are in `assets/site.css`. The "Try a question" mini game is `assets/try.js`.
+When you change text, change the English and the German page.
+
+Colors and layout are in `assets/site.css`. The "Try a question" mini game is `assets/try.js`;
+its words are in the `data-…` lines on each home page (EDIT 8).
 
 ## Editing text
 
 Open a page and search for `EDIT`. Each numbered comment marks text you can change.
 Change only the words between `>` and `<`.
 
+## Google Play
+
+The Google Play buttons link to `https://play.google.com/store/apps/details?id=com.mathcats.mathcats`.
+That address only works for everyone once the app is in production on Google Play.
+In Play Console, set **Website** to `https://makocatsmath.com/` (AdMob then finds `app-ads.txt` here).
+
 ## When the app is live on the App Store
 
-1. `index.html`, **EDIT 4**: swap "Coming soon" for the real App Store link.
-2. `index.html`, **EDIT 11**: change the closing box text.
-3. `index.html`, **LINK EDIT** near the top: add the App Store ID for Safari's app banner.
-4. App Store Connect: set **Support URL** to `https://makocatsmath.com/support/` and **Marketing URL** to `https://makocatsmath.com/`.
+In `index.html` **and** `de/index.html`:
+
+1. **EDIT 4**: swap "Coming soon" for the real App Store link.
+2. **EDIT 13**: change the closing box text and add the App Store button.
+3. **LINK EDIT** near the top: add the App Store ID for Safari's app banner.
+
+Then in App Store Connect set **Support URL** to `https://makocatsmath.com/support/` and **Marketing URL** to `https://makocatsmath.com/`.
 
 ## Publishing on GitHub Pages with the domain
 

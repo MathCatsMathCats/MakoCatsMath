@@ -1,8 +1,13 @@
 // "Try a question" mini game on the home page.
 // Runs only in the browser and stores nothing.
+// The words come from data-… attributes on #try-game, so each language page sets its own.
 (function () {
   var root = document.getElementById("try-game");
   if (!root) return;
+
+  var text = root.dataset;
+  var cheers = text.right.split("|");
+  var say = text.say.split("|"); // plus | minus | times | equals what?
 
   var ROUNDS = 3;
   var qEl = root.querySelector(".question");
@@ -75,7 +80,7 @@
   function show() {
     var q = makeQuestion();
     qEl.textContent = q.text;
-    qEl.setAttribute("aria-label", q.text.replace("−", "minus").replace("×", "times").replace("+", "plus").replace("= ?", "equals what?"));
+    qEl.setAttribute("aria-label", q.text.replace("+", say[0]).replace("−", say[1]).replace("×", say[2]).replace("= ?", say[3]));
     feedback.textContent = "";
     answersEl.innerHTML = "";
     locked = false;
@@ -93,12 +98,12 @@
     if (!right) {
       btn.classList.add("wrong");
       btn.disabled = true;
-      feedback.textContent = "Not quite – try again!";
+      feedback.textContent = text.wrong;
       return;
     }
     locked = true;
     btn.classList.add("right");
-    feedback.textContent = ["Yes! Great job! 🎉", "Purr-fect! 🐾", "You got it! ⭐"][round];
+    feedback.textContent = cheers[round % cheers.length];
     dots[round].classList.add("on");
     hop();
     confetti();

@@ -40,11 +40,11 @@ Then in App Store Connect set **Support URL** to `https://makocatsmath.com/suppo
 ## Publishing on GitHub Pages with the domain
 
 1. Buy `makocatsmath.com`.
-2. On github.com, create a new **public** repository named `makocatsmath.com`.
+2. The site's repository is `MathCatsMathCats/MakoCatsMath` (public).
    Never reuse the names `MakoCatsMath-privacy`, `MathCats-privacy` or `ChromaticDrift-privacy`.
 3. Push this folder:
    ```
-   git remote add origin https://github.com/MathCatsMathCats/makocatsmath.com.git
+   git remote add origin https://github.com/MathCatsMathCats/MakoCatsMath.git
    git push -u origin main
    ```
 4. Repository **Settings → Pages**: Source "Deploy from a branch", branch `main`, folder `/ (root)`.

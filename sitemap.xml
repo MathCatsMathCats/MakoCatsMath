@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://makocatsmath.com/</loc><lastmod>2026-10-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://makocatsmath.com/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://makocatsmath.com/de/"/></url>
-  <url><loc>https://makocatsmath.com/de/</loc><lastmod>2026-10-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://makocatsmath.com/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://makocatsmath.com/de/"/></url>
-  <url><loc>https://makocatsmath.com/support/</loc><lastmod>2026-10-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://makocatsmath.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://makocatsmath.com/de/support/"/></url>
-  <url><loc>https://makocatsmath.com/de/support/</loc><lastmod>2026-10-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://makocatsmath.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://makocatsmath.com/de/support/"/></url>
-  <url><loc>https://makocatsmath.com/privacy/</loc><lastmod>2026-10-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://makocatsmath.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://makocatsmath.com/de/datenschutz/"/></url>
-  <url><loc>https://makocatsmath.com/de/datenschutz/</loc><lastmod>2026-10-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://makocatsmath.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://makocatsmath.com/de/datenschutz/"/></url>
-  <url><loc>https://makocatsmath.com/impressum/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://mathcatsmathcats.github.io/MakoCatsMath/</loc><lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mathcatsmathcats.github.io/MakoCatsMath/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mathcatsmathcats.github.io/MakoCatsMath/de/"/></url>
+  <url><loc>https://mathcatsmathcats.github.io/MakoCatsMath/de/</loc><lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mathcatsmathcats.github.io/MakoCatsMath/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mathcatsmathcats.github.io/MakoCatsMath/de/"/></url>
+  <url><loc>https://mathcatsmathcats.github.io/MakoCatsMath/support/</loc><lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mathcatsmathcats.github.io/MakoCatsMath/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mathcatsmathcats.github.io/MakoCatsMath/de/support/"/></url>
+  <url><loc>https://mathcatsmathcats.github.io/MakoCatsMath/de/support/</loc><lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mathcatsmathcats.github.io/MakoCatsMath/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mathcatsmathcats.github.io/MakoCatsMath/de/support/"/></url>
+  <url><loc>https://mathcatsmathcats.github.io/MakoCatsMath/privacy/</loc><lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mathcatsmathcats.github.io/MakoCatsMath/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mathcatsmathcats.github.io/MakoCatsMath/de/datenschutz/"/></url>
+  <url><loc>https://mathcatsmathcats.github.io/MakoCatsMath/de/datenschutz/</loc><lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mathcatsmathcats.github.io/MakoCatsMath/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mathcatsmathcats.github.io/MakoCatsMath/de/datenschutz/"/></url>
+  <url><loc>https://mathcatsmathcats.github.io/MakoCatsMath/impressum/</loc><lastmod>2026-10-10</lastmod></url>
 </urlset>

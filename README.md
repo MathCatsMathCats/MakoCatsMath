@@ -65,6 +65,12 @@ Then in App Store Connect set **Support URL** to `https://makocatsmath.com/suppo
 
 7. When GitHub shows the certificate is ready, tick **Enforce HTTPS**.
 8. Recommended: verify the domain under your GitHub account **Settings → Pages**, so nobody else can claim it.
+9. Until then the link-preview tags, `sitemap.xml` and `robots.txt` name
+   `https://mathcatsmathcats.github.io/MakoCatsMath/` as the site address. Switch them to the domain,
+   then commit and push:
+   ```
+   grep -rl 'https://mathcatsmathcats.github.io/MakoCatsMath/' --include='*.html' --include='*.xml' --include='*.txt' . | xargs perl -pi -e 's#https://mathcatsmathcats\.github\.io/MakoCatsMath/#https://makocatsmath.com/#g'
+   ```
 
 The app's privacy policy stays at
 `https://mathcatsmathcats.github.io/MakoCatsMath-privacy/privacy-policy.html`,

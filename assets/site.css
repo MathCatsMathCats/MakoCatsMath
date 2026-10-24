@@ -301,3 +301,10 @@ section { padding: 64px 0; }
   .plat th, .plat td { padding: 10px 5px; }
   .plat tbody th { width: 28%; }
 }
+
+/* makohippo badge in the header: back to all games on makohippo.com */
+.nav a.studio { padding: 0; width: 44px; height: 44px; min-height: 44px; margin-left: 6px; display: inline-flex; align-items: center; justify-content: center;
+  border: 0; border-radius: 50%; background: #FAF8F3; box-shadow: 0 2px 8px rgba(31, 45, 74, .25); transition: transform .2s; }
+.nav a.studio:hover { background: #FAF8F3; transform: scale(1.08) rotate(-5deg); }
+.nav a.studio img { width: 34px; height: 34px; display: block; }
+@media (prefers-reduced-motion: reduce) { .nav a.studio { transition: none; } .nav a.studio:hover { transform: none; } }

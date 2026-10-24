@@ -1,4 +1,4 @@
-# makocatsmath.com
+# Mako Cats Math website
 
 Website for **Mako Cats Math**, the math game for kids on iPhone, iPad and Android, in English and German.
 Plain HTML and CSS. Nothing to install and nothing to build.
@@ -25,7 +25,7 @@ Change only the words between `>` and `<`.
 
 The Google Play buttons link to `https://play.google.com/store/apps/details?id=com.mathcats.mathcats`.
 That address only works for everyone once the app is in production on Google Play.
-In Play Console, set **Website** to `https://makocatsmath.com/` (AdMob then finds `app-ads.txt` here).
+In Play Console, set **Website** to `https://makohippo.com/` (AdMob then finds `app-ads.txt` at the domain root).
 
 ## When the app is live on the App Store
 
@@ -35,46 +35,19 @@ In `index.html` **and** `de/index.html`:
 2. **EDIT 13**: change the closing box text and add the App Store button.
 3. **LINK EDIT** near the top: add the App Store ID for Safari's app banner.
 
-Then in App Store Connect set **Support URL** to `https://makocatsmath.com/support/` and **Marketing URL** to `https://makocatsmath.com/`.
+Then in App Store Connect set **Support URL** to `https://makohippo.com/MakoCatsMath/support/` and **Marketing URL** to `https://makohippo.com/MakoCatsMath/`.
 
-## Publishing on GitHub Pages with the domain
+## The domain
 
-1. Buy `makocatsmath.com`.
-2. The site's repository is `MathCatsMathCats/MakoCatsMath` (public).
-   Never reuse the names `MakoCatsMath-privacy`, `MathCats-privacy` or `ChromaticDrift-privacy`.
-3. Push this folder:
-   ```
-   git remote add origin https://github.com/MathCatsMathCats/MakoCatsMath.git
-   git push -u origin main
-   ```
-4. Repository **Settings → Pages**: Source "Deploy from a branch", branch `main`, folder `/ (root)`.
-5. Same page, **Custom domain**: enter `makocatsmath.com` and save.
-6. At the domain registrar, add these DNS records:
+The site is served at `https://makohippo.com/MakoCatsMath/`: the custom domain `makohippo.com` is set on the root
+repo `MathCatsMathCats.github.io` (DNS at Cloudflare, "DNS only"). Every project site inherits it, and the old
+github.io addresses redirect there. Don't set a custom domain on this repository.
 
-   | Type | Name | Value |
-   |---|---|---|
-   | A | @ | 185.199.108.153 |
-   | A | @ | 185.199.109.153 |
-   | A | @ | 185.199.110.153 |
-   | A | @ | 185.199.111.153 |
-   | AAAA | @ | 2606:50c0:8000::153 |
-   | AAAA | @ | 2606:50c0:8001::153 |
-   | AAAA | @ | 2606:50c0:8002::153 |
-   | AAAA | @ | 2606:50c0:8003::153 |
-   | CNAME | www | mathcatsmathcats.github.io |
-
-7. When GitHub shows the certificate is ready, tick **Enforce HTTPS**.
-8. Recommended: verify the domain under your GitHub account **Settings → Pages**, so nobody else can claim it.
-9. Until then the link-preview tags, `sitemap.xml` and `robots.txt` name
-   `https://mathcatsmathcats.github.io/MakoCatsMath/` as the site address. Switch them to the domain,
-   then commit and push:
-   ```
-   grep -rl 'https://mathcatsmathcats.github.io/MakoCatsMath/' --include='*.html' --include='*.xml' --include='*.txt' . | xargs perl -pi -e 's#https://mathcatsmathcats\.github\.io/MakoCatsMath/#https://makocatsmath.com/#g'
-   ```
+`404.html` has a fixed `<base href="/MakoCatsMath/">`, so its links work at any depth.
 
 The app's privacy policy stays at
-`https://mathcatsmathcats.github.io/MakoCatsMath-privacy/privacy-policy.html`,
+`https://mathcatsmathcats.github.io/MakoCatsMath-privacy/privacy-policy.html` (it redirects to makohippo.com),
 because that address is built into the app. This site links to it.
 
-`app-ads.txt` is here for the Android version: AdMob reads it from the website
-named in the Google Play listing.
+`app-ads.txt` here is only a spare copy: AdMob reads the one at the domain root,
+`https://makohippo.com/app-ads.txt`, from the `MathCatsMathCats.github.io` repo.

@@ -27,15 +27,12 @@ The Google Play buttons link to `https://play.google.com/store/apps/details?id=c
 That address only works for everyone once the app is in production on Google Play.
 In Play Console, set **Website** to `https://makohippo.com/` (AdMob then finds `app-ads.txt` at the domain root).
 
-## When the app is live on the App Store
+## The App Store
 
-In `index.html` **and** `de/index.html`:
-
-1. **EDIT 4**: swap "Coming soon" for the real App Store link.
-2. **EDIT 13**: change the closing box text and add the App Store button.
-3. **LINK EDIT** near the top: add the App Store ID for Safari's app banner.
-
-Then in App Store Connect set **Support URL** to `https://makohippo.com/MakoCatsMath/support/` and **Marketing URL** to `https://makohippo.com/MakoCatsMath/`.
+The iPhone/iPad app is live (app ID 6758961622). The English page links to
+`https://apps.apple.com/de/app/mako-cats-math/id6758961622?l=en-GB`, the German page to the same address
+without `?l=en-GB`. Both pages carry the `apple-itunes-app` meta tag for Safari's app banner.
+In App Store Connect set **Support URL** to `https://makohippo.com/MakoCatsMath/support/` and **Marketing URL** to `https://makohippo.com/MakoCatsMath/`.
 
 ## The domain
 

@@ -313,3 +313,6 @@ section { padding: 64px 0; }
   .nav a.studio { width: 38px; height: 38px; min-height: 38px; margin-left: 4px; }
   .nav a.studio img { width: 30px; height: 30px; }
 }
+
+/* store logos in the store buttons: a white disc so every colour of the Play logo shows on the yellow */
+.btn .store-logo { width: 34px; height: 34px; flex: none; margin: -4px 0 -4px -12px; filter: drop-shadow(0 1px 1.5px rgba(87, 51, 128, .25)); }
